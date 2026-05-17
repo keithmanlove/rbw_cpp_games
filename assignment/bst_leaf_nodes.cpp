@@ -20,7 +20,7 @@ Node* insert(Node* root, int val) {
     return root;
 }
 
-// Collect leaf nodes in-order
+// Collect leaf nodes in order
 void collectLeaves(Node* root, std::vector<int>& leaves) {
     if (!root) return;
     if (!root->left && !root->right) {
@@ -51,6 +51,5 @@ int main() {
         root = insert(root, v);
     }
     printLeaves(root);
-    // Clean up memory (optional for this short program)
     return 0;
 }
